@@ -1,0 +1,19 @@
+.container {
+  margin: 20px auto;
+  width: 55%;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  background-color: #cccccc
+}
+th {
+  text-align: left;
+}
+li {
+  list-style-type: none;
+}
+.wi-m { width: 55%; }
+.wi-l { width: 85%; }
+.pd-lt-s { padding-left: 1em}
+
+.grey { background-color: #404040 }
+
