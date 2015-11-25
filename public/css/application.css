@@ -1,19 +1,82 @@
-.container {
-  margin: 20px auto;
-  width: 55%;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
-  background-color: #cccccc
-}
-th {
-  text-align: left;
-}
-li {
-  list-style-type: none;
-}
-.wi-m { width: 55%; }
-.wi-l { width: 85%; }
-.pd-lt-s { padding-left: 1em}
 
-.grey { background-color: #404040 }
+.debug { border: 1px solid red; }
+.debug-bg { background-color: red; }
+
+.fl-lt { float: left; }
+
+/*########  DISPLAY  #############
+################################*/
+
+.box { box-sizing: border-box }
+.rel { position: relative; }
+.lt-no { left: 0; }
+.abs { position: absolute;}
+.block { display: block; }
+
+.oa { overflow: auto; }
+
+
+/*########  WIDTH  ###############
+################################*/
+
+.wide { width: 100%; }
+.wt-m { width: 20%; }
+.wt-au { width: auto; }
+
+
+/*########  HEIGHT ##############
+################################*/
+
+.tall { min-height: 100%; }
+
+.ht-md { height: 1em; }
+.ht-mh { height: 1.5em; }
+.ht-ml { height: 5%; }
+.ht-mx { height: 90%; }
+.ht-au { height: auto; }
+.ht-vh { height: 100vh; }
+
+
+/*########  BACKGROUND  ##########
+################################*/
+
+.bg-bl { background-color: black; }
+.bg-dg { background-color: #242424; }
+
+
+/*########  TEXT  ###############
+################################*/
+
+.tx-g { font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-style: italic; }
+.tx-gs { font-family: 'Roboto', sans-serif;
+        font-weight: 400; }
+.tx-it { font-style: italic; }
+.tc-wt { color: white; }
+.tc-gy { color: #f3f3f3; }
+.th-ml { font-size: 1.5em; }
+.th-ms { font-size: .7em;}
+
+
+/*########  PADDING  ############
+################################*/
+
+.pd-no { padding: 0; }
+.pd-xs { padding: .3em; }
+.pd-s { padding: .5em; }
+
+
+
+/*########  MARGIN  ############
+################################*/
+
+.mg-no { margin: 0; }
+.mg-lt-md { margin-left: 20%; }
+.mg-xs { margin: .4em;}
+
+
+/*########  BUNDLES  ############
+################################*/
+
 

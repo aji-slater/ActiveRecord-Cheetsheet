@@ -1,3 +1,3 @@
 get '/' do
-  redirect '/user'
+  erb :index
 end
