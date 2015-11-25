@@ -1,4 +1,6 @@
 
+
+
 .debug { border: 1px solid red; }
 .debug-bg { background-color: red; }
 
@@ -42,6 +44,8 @@
 
 .bg-bl { background-color: black; }
 .bg-dg { background-color: #242424; }
+.bg-red { background-color: red; }
+.bg-blue { background-color: blue; }
 
 
 /*########  TEXT  ###############
