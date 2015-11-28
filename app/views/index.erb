@@ -3,7 +3,309 @@
 
 <section class="col-3 pd-xs tx-gs th-sm">
 
-<div id="ar-basics-title" class="bg-one pd-xs">
+
+
+
+<%= erb :_hashes %>
+
+
+
+
+
+</section>
+
+<section class="col-3 pd-xs tx-gs th-sm">
+<div id="ar-migrations-title" class="bg-two pd-xs">
+<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#creating-a-migration"><span class="title">Creating Migrations</span></a>
+
+create_table
+drop_table
+change_table
+rename_table
+add_column
+rename_column
+change_column
+remove_column
+add_index
+remove_index
+
+::core
+configurations
+.new
+.clone
+.dup
+.freeze
+.frozen?
+.inspect
+pp ( pretty print )
+.readonly!
+.readonly?
+.slice(*methods)
+
+::Persistence
+.becomes(klass)
+.becomes!(klass)
+.decrement(attribute, by = 1)
+.decrement!(attribute, by = 1)
+.delete
+.destroy
+.destroy!
+.destroyed?
+.increment(attribute, by = 1)
+.increment!(attribute, by = 1)
+.new_record?
+.persisted?
+.reload(options)
+.save(*)
+.save!(*)
+.toggle(attribute)
+.toggle!(attribute)
+.touch(*names)
+.update(attributes)
+.update!(attributes)
+.update_attribute(name, value)
+.update_attributes(attributes)
+.update_attributes!(attributes)
+.update_column(name, value)
+.update_columns(attributes)
+
+::Inheritance
+initialize_dup(other)
+
+::Scoping
+initialize_internals_callback
+populate_with_current_scope_attributes
+
+::AtributeAssignment
+.assign_attributes(new_attributes)
+.attributes=(new_attributes)
+
+ActiveModel::Conversion
+.to_key
+.to_model
+.to_param
+.to_partial_path
+
+::Integration
+.cache_key
+.to_param
+
+::Validations
+.save(options={})
+.save!(options={})
+.valid?
+.validate(context = nil)
+.validate!(context = nil)
+
+::AttributeMethods
+[:attr_name]
+[:attr_name] =value
+.attribute_for_inspect
+.attribute_present?
+.attributes
+.has_attribute?(attr_name)
+.respond_to?(name)
+
+::AttributeMethods::BeforeTypeCast
+.attributes_before_type_cast
+.read_attribute_before_type_cast(attr_name)
+
+::AttributeMethods::ClassMethods
+.attribute_method?(attribute)
+.attribute_names
+.class_method_defined_within?(name, klass...)
+.column_for_attribute(name)
+.dangerous_class_method?(method_name)
+.instance_method_already_implemented?(method_name)
+
+::AttributeMethods::PrimaryKey
+.id
+.id=(value)
+.id?
+.id_before_type_cast
+.id_was
+.to_key
+.attribute_method?(attr_name)
+
+::AttributeMethods::Query
+.query_attribute(attr_name)
+
+::AttributeMethods::Serialization::ClassMethods
+.serialize(attr_name)
+.serialized_attributes()
+
+::AttributeMethods::Write
+.raw_write_attribute(attr_name, value)
+.write_attribute(attr_name, value)
+
+::Sanitization::ClassMethods
+.expand_hash_conditions_for_aggregates(attrs)
+.sanitize_conditions(condition)
+.sanitize_sql(condition)
+.sanitize_sql_array(ary)
+.sanitize_sql_for_assignment(assignments)
+.sanitize_sql_for_conditions(condition)
+.sanitize_sql_hash(attrs)
+.sanitize_sql_hash_for_assignment(attrs, table)
+.sanitize_sql_hash_for_conditions(attrs)
+.sanitize_sql_like(string)
+
+ActiveSupport::Callbacks
+after(&call)
+around(&call)
+before(&call)
+.build(callback...)
+.call(env)
+define_callbacks(*names)
+get_callbacks
+reset_callbacks
+set_callback(name, *filter_list, &block)
+skip_callbacks
+
+::Timestamp
+.record_timestamps
+.default_timezone
+
+::Associations
+belongs_to(name)
+has_and_belongs_to_many(name)
+has_many(name)
+has_many :through
+has_one(name)
+has_one :through
+source
+
+
+ActiveModel::SecurePassword
+has_secure_password
+.authenticate
+.password=
+password_confirmation(unenecrupted pw)
+
+::AutosaveAssociation
+.changed_for_autosave?
+.destroyed_by_association
+.destroyed_by_association=
+.mark_for_destruction
+.marked_for_destruction?
+.reload
+
+::Aggregations
+.compost_of(part_id, options={})
+
+::Transactions
+after_commit(*args, &block)
+after_rollback(*args, &block)
+.transaction(options = {}, &block)
+
+::NoTouching
+.no_touching
+.no_touching?
+
+::Reflection
+.autosave=(autosave)
+.compute_class
+.klass
+.reflect_on_aggregation(aggregation)
+.reflect_on_all_aggregations
+.reflect_on_all_associations(macro = nil)
+.reflect_on_all_autosave_associations
+.reflect_on_association(association)
+.reflections
+
+
+
+::ModelSchema
+.column_defaults
+.column_names
+.content_columns
+.inheritence_column
+.inheritence_column=(value)
+.quoted_table_name
+.reset_column_information
+.sequence_name
+.sequence_name=(value)
+.table_exists?
+.table_name
+.table_name=(value)
+
+::FinderMethods
+.exists?
+.fifth
+.fifth!
+.find(*args)
+.find_by(*args)
+.find_by!(*args)
+.find_last
+.find_nth(index, offset)
+.find_nth!(index)
+.find_nth_with_limit(offset, limit)
+.find_one(id)
+.find_some(id)
+.find_take
+.find_with_ids(*ids)
+.first
+.first!
+.forty_two
+.forty_two!
+.fourth
+.fourth!
+.last
+.last!
+.second
+.second!
+.take
+.take!
+.third
+.third!
+
+::Relation
+.any?
+.blank?
+.build(*args)
+.create(*args)
+.create!(*args)
+.delete(id)
+.delete_all
+.destroy
+.destroy_all
+.eager_loading?
+.empty?
+.encode_with(encoder)
+.explain
+.find_or_create_by(attributes, &block)
+.find_or_initialize_by(attributes, &block)
+.initialize_copy(other)
+.inspect
+.joined_includes_variables
+.load
+.many?
+.new(*args, &block)
+.pretty_print(q)
+.reload
+.reset
+.scope_for_create
+.scoping
+.size
+.to_a
+.to_sql
+.uniq_value
+.update
+.update_all(updates)
+.values
+.where_values_hash
+
+</div>
+
+
+
+</section>
+
+<div class="col-3 spacer" id="centering-spacer-r"></div>
+</div>
+
+
+<!-- <div id="ar-basics-title" class="bg-one pd-xs">
 <span class="title">Convention</span>
 
 <a href="http://guides.rubyonrails.org/active_record_basics.html#naming-conventions">
@@ -42,48 +344,4 @@ update</div></a>
 <div class="wide bg-one-lt pd-bo-xs pd-lt-lg">
 delete</div></a>
 
-</div>
-</section>
-
-<section class="col-3 pd-xs tx-gs th-sm">
-<div id="ar-migrations-title" class="bg-two pd-xs">
-<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#creating-a-migration"><span class="title">Creating Migrations</span></a>
-
-<a href="http://guides.rubyonrails.org/active_record_basics.html#naming-conventions">
-<div class="wide bg-two-lt pd-tp-xs pd-lt-m">
-creating migrations</div></a>
-
-<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#model-generators">
-<div class="wide bg-two-lt pd-lt-m">
-model generators</div></a>
-
-<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#passing-modifiers">
-<div class="wide bg-two-lt pd-lt-m">
-command line modifiers</div></a>
-
-<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#creating-a-table">
-<div class="wide bg-two-lt pd-lt-m">
-create_table</div></a>
-
-<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#creating-a-join-table">
-<div class="wide bg-two-lt pd-lt-m">
-create_join_table</div></a>
-
-<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#changing-tables">
-<div class="wide bg-two-lt pd-lt-m">
-change_table</div></a>
-
-<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#foreign-keys">
-<div class="wide bg-two-lt pd-lt-m">
-add_foreign_key</div></a>
-
-<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html#when-helpers-aren-t-enough">
-<div class="wide bg-two-lt pd-lt-m">
-.execute</div></a>
-
-
-</div>
-</section>
-
-<div class="col-3 spacer" id="centering-spacer-r"></div>
-</div>
+</div> -->

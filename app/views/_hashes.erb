@@ -1,0 +1,22 @@
+
+
+<% @hash.each do |section, info| %>
+
+<article id="ar-migrations-title" class="<%= info[:color] %> heading pd-xs">
+<span class="title"> <%= section %> </span>
+
+<% counter = 0 %>
+<% info[:list].each do |li|  %>
+<a href="<%= li[:href] %>"><div class="wide bg-one-lt pd-lt-m"
+<% if info[:list].index(li) == 0 %>style="padding-top: .3em;"<% end %>
+<% if info[:list].index(li) == info[:list].length-1 %>style="padding-bottom: .3em;"<% end %>
+>
+<%= li[:name] %>
+</div></a></li>
+<% counter += 1 %>
+<% end %>
+
+
+
+</article>
+<% end %>

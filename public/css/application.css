@@ -92,10 +92,11 @@ span.title { font-size: 1.1em; }
 /*########  MARGIN  ############
 ################################*/
 
-.mg-no { margin: 0; }
-.mg-lt-md { margin-left: 20%; }
-.mg-xs { margin: .4em;}
-.mg-tp-xs { margin-top: .3em;}
+.mg-no    { margin:         0; }
+.mg-lt-md { margin-left:    20%; }
+.mg-xs    { margin:        .4em; }
+.mg-tp-xs { margin-top:    .3em; }
+.mg-bo-xs { margin-bottom: .3em; }
 
 
 /*########  BUNDLES  ############
@@ -108,3 +109,11 @@ span.title { font-size: 1.1em; }
 ################################*/
 
 .fx { position: fixed; }
+
+li:first-child { background-color: yellow;
+                  color: white; }
+
+ul
+{
+    list-style-type: none;
+}
