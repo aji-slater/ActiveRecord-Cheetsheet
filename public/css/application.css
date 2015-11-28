@@ -1,5 +1,6 @@
 
-
+a { text-decoration  : none;
+    color            : black; }
 
 .debug { border: 1px solid red; }
 .debug-bg { background-color: red; }
@@ -47,6 +48,14 @@
 .bg-red { background-color: red; }
 .bg-blue { background-color: blue; }
 
+.bg-one { background-color: #666a86; }
+.bg-two { background-color: #788aa3; }
+.bg-thr { background-color: #92b6b1; }
+.bg-fou { background-color: #b2c9ab; }
+.bg-fiv { background-color: #e8ddb5; }
+
+.bg-one-lt { background-color: #b1b4c4; }
+.bg-two-lt { background-color: #b3bdcb; }
 
 /*########  TEXT  ###############
 ################################*/
@@ -60,16 +69,24 @@
 .tc-wt { color: white; }
 .tc-gy { color: #f3f3f3; }
 .th-ml { font-size: 1.5em; }
-.th-ms { font-size: .7em;}
+.th-ms { font-size: 1.1em;}
+.th-sm { font-size: .9em;}
+
+span.title { font-size: 1.1em; }
+
 
 
 /*########  PADDING  ############
 ################################*/
 
-.pd-no { padding: 0; }
-.pd-xs { padding: .3em; }
-.pd-s { padding: .5em; }
-
+.pd-no    { padding:         0;   }
+.pd-xs    { padding:        .3em; }
+.pd-s     { padding:        .5em; }
+.pd-lt-m  { padding-left:    2em; }
+.pd-lt-lg { padding-left:    3em; }
+.pd-tp-xs { padding-top:    .3em; }
+.pd-tp-lg { padding-top:     3em;  }
+.pd-bo-xs { padding-bottom: .3em; }
 
 
 /*########  MARGIN  ############
@@ -78,9 +95,16 @@
 .mg-no { margin: 0; }
 .mg-lt-md { margin-left: 20%; }
 .mg-xs { margin: .4em;}
+.mg-tp-xs { margin-top: .3em;}
 
 
 /*########  BUNDLES  ############
 ################################*/
 
+.bg-one-lt:hover { background-color: #c7c9d5; }
+.bg-two-lt:hover { background-color: #cad1db; }
 
+/*#######  POSITION  ############
+################################*/
+
+.fx { position: fixed; }
