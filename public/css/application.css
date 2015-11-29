@@ -2,10 +2,14 @@
 a { text-decoration  : none;
     color            : black; }
 
+.wrap { word-wrap:   break-word;
+        text-indent: -1em; }
+
 .debug { border: 1px solid red; }
 .debug-bg { background-color: red; }
 
-.fl-lt { float: left; }
+.fl-lt { float:  left;  }
+.fl-rt { float:  right; }
 
 /*########  DISPLAY  #############
 ################################*/
@@ -25,6 +29,7 @@ a { text-decoration  : none;
 .wide { width: 100%; }
 .wt-m { width: 20%; }
 .wt-au { width: auto; }
+.mn-wd-m { minimum-width: 500px; }
 
 
 /*########  HEIGHT ##############
@@ -48,14 +53,29 @@ a { text-decoration  : none;
 .bg-red { background-color: red; }
 .bg-blue { background-color: blue; }
 
-.bg-one { background-color: #666a86; }
-.bg-two { background-color: #788aa3; }
-.bg-thr { background-color: #92b6b1; }
-.bg-fou { background-color: #b2c9ab; }
-.bg-fiv { background-color: #e8ddb5; }
+.bg-one { background-color: #cacf85; }
+.bg-two { background-color: #8cba80; }
+.bg-thr { background-color: #658e9c; }
+.bg-fou { background-color: #4d5382; }
+.bg-fiv { background-color: #514663; }
+.bg-six { background-color: #b49daa; }
+.bg-sev { background-color: #b45d6d; }
 
-.bg-one-lt { background-color: #b1b4c4; }
-.bg-two-lt { background-color: #b3bdcb; }
+.bg-one-lt { background-color: #d6daa1; }
+.bg-two-lt { background-color: #afcfa6; }
+.bg-thr-lt { background-color: #adc3ca; }
+.bg-fou-lt { background-color: #b0b3d0; }
+.bg-fiv-lt { background-color: #beb6cb; }
+.bg-six-lt { background-color: #c5b3bd; }
+.bg-sev-lt { background-color: #d9adb6; }
+
+.bg-one-lt:hover { background-color: #e2e5bd; }
+.bg-two-lt:hover { background-color: #c6ddc0; }
+.bg-thr-lt:hover { background-color: #c5d4d9; }
+.bg-fou-lt:hover { background-color: #c8cbdf; }
+.bg-fiv-lt:hover { background-color: #d2cddb; }
+.bg-six-lt:hover { background-color: #d6c9d1; }
+.bg-sev-lt:hover { background-color: #e6c8ce; }
 
 /*########  TEXT  ###############
 ################################*/
@@ -63,17 +83,17 @@ a { text-decoration  : none;
 .tx-g { font-family: 'Roboto', sans-serif;
         font-weight: 600;
         font-style: italic; }
-.tx-gs { font-family: 'Roboto', sans-serif;
-        font-weight: 400; }
+/*.tx-gs { font-family: 'Roboto', sans-serif;
+        font-weight: 400; }*/
 .tx-it { font-style: italic; }
 .tc-wt { color: white; }
-.tc-gy { color: #f3f3f3; }
+.tc-gy { color: #949494; }
 .th-ml { font-size: 1.5em; }
 .th-ms { font-size: 1.1em;}
 .th-sm { font-size: .9em;}
 
 span.title { font-size: 1.1em; }
-
+.tc-gy:hover { color: #c2c2c2; }
 
 
 /*########  PADDING  ############
@@ -82,17 +102,19 @@ span.title { font-size: 1.1em; }
 .pd-no    { padding:         0;   }
 .pd-xs    { padding:        .3em; }
 .pd-s     { padding:        .5em; }
-.pd-lt-m  { padding-left:    2em; }
+.pd-lt-m  { padding-left:    3em; }
 .pd-lt-lg { padding-left:    3em; }
 .pd-tp-xs { padding-top:    .3em; }
-.pd-tp-lg { padding-top:     3em;  }
+.pd-tp-lg { padding-top:     3em; }
 .pd-bo-xs { padding-bottom: .3em; }
+.pd-bo-md { padding-bottom:  2em; }
+
 
 
 /*########  MARGIN  ############
 ################################*/
 
-.mg-no    { margin:         0; }
+.mg-no    { margin:         0;   }
 .mg-lt-md { margin-left:    20%; }
 .mg-xs    { margin:        .4em; }
 .mg-tp-xs { margin-top:    .3em; }
@@ -102,8 +124,7 @@ span.title { font-size: 1.1em; }
 /*########  BUNDLES  ############
 ################################*/
 
-.bg-one-lt:hover { background-color: #c7c9d5; }
-.bg-two-lt:hover { background-color: #cad1db; }
+
 
 /*#######  POSITION  ############
 ################################*/
@@ -117,3 +138,5 @@ ul
 {
     list-style-type: none;
 }
+.ov-hid { overflow: hidden;}
+.ov-vis { overflow: visible;}

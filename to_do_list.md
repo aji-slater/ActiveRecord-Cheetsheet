@@ -1,16 +1,4 @@
-<div class="row">
-<div class="col-1 spacer" id="centering-spacer-l"></div>
-<div class="col-10">
-<section class="col-4 col-m-6 tx-gs th-sm">
 
-
-
-
-<%= erb :_hashes %>
-
-
-
-<!--
 ::SchemaMigration
 .create_table
 .drop_table
@@ -196,19 +184,4 @@ announce(message)
 .up
 .write(text)
 
--->
 
-
-
-
-
-
-</div>
-
-
-
-</section>
-</div>
-
-<div class="col-1 spacer" id="centering-spacer-r"></div>
-</div>

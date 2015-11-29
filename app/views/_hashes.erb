@@ -1,22 +1,35 @@
 
-
+<% box_counter = 0 %>
 <% @hash.each do |section, info| %>
 
-<article id="ar-migrations-title" class="<%= info[:color] %> heading pd-xs">
-<span class="title"> <%= section %> </span>
+  <article id="<%= section %>-title" class="<%= info[:color] %> heading pd-xs">
+    <span class="title"> <%= section %> </span>
 
-<% counter = 0 %>
-<% info[:list].each do |li|  %>
-<a href="<%= li[:href] %>"><div class="wide bg-one-lt pd-lt-m"
-<% if info[:list].index(li) == 0 %>style="padding-top: .3em;"<% end %>
-<% if info[:list].index(li) == info[:list].length-1 %>style="padding-bottom: .3em;"<% end %>
->
-<%= li[:name] %>
-</div></a></li>
-<% counter += 1 %>
-<% end %>
+    <% counter = 0 %>
+
+    <% info[:list].each do |li|  %>
+      <a href="<%= li[:href] %>"><div class="wrap wide <%= info[:color] %>-lt pd-lt-m"
+        <% if info[:list].index(li) == 0 %>style="padding-top: .3em;"<% end %>
+        <% if info[:list].index(li) == info[:list].length-1 %>style="padding-bottom: .3em;"<% end %>
+      >
+        <%= li[:name] %>
+      </div></a></li>
+      <% counter += 1 %>
+    <% end %>
+    <% box_counter += 1 %>
+  </article>
+
+  <% if box_counter == 2 %>
+    </section>
+    <section class="col-4 col-m-6 tx-gs th-sm">
+  <% end %>
+
+  <% if box_counter == 5 %>
+    </section>
+    <section class="col-4 col-m-6 tx-gs th-sm">
+  <% end %>
 
 
 
-</article>
+
 <% end %>

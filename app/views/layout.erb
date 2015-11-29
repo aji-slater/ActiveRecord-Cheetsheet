@@ -7,13 +7,22 @@
 
   <link rel="stylesheet" type="text/css" href="/css/application.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,600italic,900' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/application.js"></script>
+
 </head>
 <body class="pd-no">
 
-<header class="fx wide bg-bl ht-ml th-ml pd-xs box">
-<span class="tc-wt tx-g tc-gy">Active Record Cheat Sheet</span>
+<header class="ov-hid fx wide bg-bl mn-wd-m ht-ml th-ml pd-xs box">
+<span class="tc-wt tx-g">Active Record Cheat Sheet</span>
+<span class="fl-rt tc-gy">
+<a href="" class="tc-gy" id="thisButton">this </a>
+<a href="" class="tc-gy" id="thatButton">that </a>
+<span class="tc-gy">&</span>
+<a href="" class="tc-gy" id="theOtherButton"> the other</a>
+</span>
 </header>
-<div class="bg-dg tall pd-tp-lg" id="yield-wrapper">
+<div class="bg-dg tall pd-tp-lg pd-bo-md" id="yield-wrapper">
 
 <%= yield %>
 
